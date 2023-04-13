@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="crud">
+        <div class="head">
+            <h2>crud</h2>
+            <p>PRODUCT MANGMENT SYSTEM</p>
+        </div>
+
+
+
+        <div class="inputs">
+            <input type="text" name="" id="title" placeholder="title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+                <small id="total"> </small>
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="category" placeholder="category">
+            <button id="submit" >Create</button>
+        </div>
+                <div id="deleteAll"></div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup="searchData(this.value) " type="text" id="search" placeholder="Search">
+                
+                <div class="btnSeach">
+                <button onclick="getSearchMood(this.id)" id="searchTitle">Search BY Title</button>
+                <button onclick="getSearchMood(this.id)" id="searchCategory">Search BY Category</button>
+                </div>
+                
+            </div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+
+                <tbody id="tBody">
+               
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
